@@ -172,6 +172,7 @@ def print_brand_result(ai_result: dict[str, Any]) -> None:
 
     story = ai_result.get("story", "")
     print(f"\n  [스토리] 생성 완료 ({len(story)}자)")
+    print(f"\n{story}")
 
     differentiation = ai_result.get("differentiation", [])
 
